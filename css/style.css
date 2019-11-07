@@ -1,0 +1,121 @@
+@import url('./generic.css');
+
+#p0_name {
+	width: 100%;
+	position: absolute;
+	top: 10%;
+	left: -20%;
+	transform: rotate(-30deg);
+	text-align: center;
+	line-height: 0.25em;
+	font-family: 'Raleway-Bold';
+}
+
+#p0_name img {
+	display: block;
+	margin-top: 15%;
+}
+
+#name1 {
+	margin-bottom: 1em;
+}
+
+#name1, #name2 {
+	font-size: 1900%;
+	display: block;
+	color: rgba(0,114,188, 1);
+	text-shadow: 1vw 1vw rgba(254,205,14, 0.3), 
+		2vw 2vw rgba(0,114,188, 0.2), 
+		3vw 3vw rgba(0,114,188, 0.1);
+	white-space: nowrap;
+}
+
+#p0_title {
+	font-size: 5rem;
+	position: absolute;
+	width: 100%;
+	bottom: 1em;
+	right: 2vw;
+	white-space: nowrap;
+	text-align: right;
+	color: #fff;
+	font-family: 'Raleway-Bold';
+}
+
+#p1_fan {
+	line-height: 20em;
+	margin-top: -15vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#fan1, #fan2, #fan3, #fan4, #fan5, #fan6, #fan7, #fan8, #fan9, #fan10 {
+	font-size: 20vw;
+	display: block;
+	color: rgba(255, 255, 255, 0.2);
+	text-shadow: 0 0.5em rgba(255, 255, 255, 0.1);
+	font-family: 'Raleway-Bold';
+}	
+
+#p1_toc {
+	color: var(--dark-bg-font);
+	font-size: 3vw;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	min-width: 8em;
+	line-height: 1em;
+}
+
+.colorContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	font-size: 1vw;
+}
+
+.colorChip {
+	width: 10vw;
+	padding: 1vh 1vw;
+	line-height: 1em;
+}
+
+.colorChip div {
+	margin: 0 auto 1vh auto;
+}
+
+#fontContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 2vmin 0;
+}
+
+#fontContainer div {
+	width: 2vw;
+	height: 2vw;
+	padding: 0 1vw;
+	margin: 0;
+	font-size: 2vw;
+	text-align: center;
+	line-height: 1vw;
+}
+
+#fontTitle {
+	text-align: center;
+	font-size: 10vw;
+	margin: 15vh 0;
+}
+
+#fontSpecimenContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.fontSpecimen {
+	padding: 1em;
+	width: 25%;
+}
