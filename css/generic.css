@@ -54,6 +54,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	color: var(--light-bg-font);
+	font-size: 20px;
 }
 
 main {
@@ -61,7 +62,6 @@ main {
 	text-align: justify;
 	text-justify: inter-character;
 	line-height: 144%;
-	font-size: 1vw;
 	height: 100%;
 }
 
@@ -75,7 +75,7 @@ section.page {
 }
 
 section.page.half {
-	height: 20vh;
+	height: 50vh;
 }
 
 section:not(.page) {
@@ -84,7 +84,6 @@ section:not(.page) {
 	text-justify: inter-character;
 	margin: 0 auto 3rem auto;
 	line-height: 144%;
-	font-size: 18px;
 	max-width: 800px;
 	min-width: 300px;
 	min-height: 100vh;
@@ -104,7 +103,7 @@ a:hover {
 }
 
 h1, h2, h3, h4 {
-	color: var(--xtract-blue);
+	/* color: var(--xtract-blue); */
 }
 
 h1, h2, h3, h4, strong {
@@ -156,6 +155,19 @@ mark {
 	background-color: var(--xtract-yellow);
 }
 
+figure {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+figcaption {
+	font-style: italic;
+	font-size: smaller;
+	color: #999;
+}
+
 .anchor {
 	color: var(--xtract-blue);
 	text-decoration: none;
@@ -169,11 +181,7 @@ mark {
 }
 
 .heroImage {
-	width: 100vw;
-	height: auto;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	width: 100%;
 }
 
 .heroText {
@@ -360,6 +368,24 @@ mark {
 	background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
 	repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
 	repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+}
+
+.bg-cube {
+	background-color:#fff;
+	background-image: linear-gradient(30deg, var(--medium-gray) 12%, transparent 12.5%, transparent 87%, var(--medium-gray) 87.5%, var(--medium-gray)),
+	linear-gradient(150deg, var(--medium-gray) 12%, transparent 12.5%, transparent 87%, var(--medium-gray) 87.5%, var(--medium-gray)),
+	linear-gradient(30deg, var(--medium-gray) 12%, transparent 12.5%, transparent 87%, var(--medium-gray) 87.5%, var(--medium-gray)),
+	linear-gradient(150deg, var(--medium-gray) 12%, transparent 12.5%, transparent 87%, var(--medium-gray) 87.5%, var(--medium-gray)),
+	linear-gradient(60deg, var(--light-gray) 25%, transparent 25.5%, transparent 75%, var(--light-gray) 75%, var(--light-gray)),
+	linear-gradient(60deg, var(--light-gray) 25%, transparent 25.5%, transparent 75%, var(--light-gray) 75%, var(--light-gray));
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+.bg-diamond {
+	background-image: linear-gradient(45deg, var(--light-gray) 25%, transparent 25%, transparent 75%, var(--light-gray) 75%, var(--light-gray)),
+	linear-gradient(-45deg, var(--light-gray) 25%, transparent 25%, transparent 75%, var(--light-gray) 75%, var(--light-gray));
+	background-size: 60px 60px;
 }
 
 .text-center {

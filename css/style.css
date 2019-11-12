@@ -3,12 +3,13 @@
 #p0_name {
 	width: 100%;
 	position: absolute;
-	top: 10%;
-	left: -20%;
+	top: 20%;
+	left: -10%;
 	transform: rotate(-30deg);
 	text-align: center;
 	line-height: 0.25em;
 	font-family: 'Raleway-Bold';
+	font-size: 1700%;
 }
 
 #p0_name img {
@@ -21,7 +22,6 @@
 }
 
 #name1, #name2 {
-	font-size: 1900%;
 	display: block;
 	color: rgba(0,114,188, 1);
 	text-shadow: 1vw 1vw rgba(254,205,14, 0.3), 
@@ -105,7 +105,7 @@
 
 #fontTitle {
 	text-align: center;
-	font-size: 10vw;
+	font-size: 9vw;
 	margin: 15vh 0;
 }
 
@@ -118,4 +118,70 @@
 .fontSpecimen {
 	padding: 1em;
 	width: 25%;
+	font-size: 18px;
+}
+
+#logoContainer {
+	width: 100%;
+	text-align: center;
+}
+
+#smallLogoContainer {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.smallLogo {
+	width: 25%;
+	padding: 1em;
+}
+
+#smallLogo1 {
+	background-color: var(--dark-bg);
+}
+
+#smallLogo2 {
+	background-color: var(--light-gray);
+}
+
+#fakeDocument {
+	border: 1px solid var(--light-gray);
+	width: 50%;
+	height: 500px;
+	margin: 0 auto;
+}
+
+#fakeDocument header, #fakeDocument footer {
+	width: 100%;
+	height: 2%;
+	background-color: var(--xtract-blue);
+}
+
+#fakeDocument footer {
+	margin-top: -8%;
+}
+
+#fakeDocument main {
+	padding-top: 0.6em;
+}
+
+#fakeDocument img {
+	width: 20%;
+	float: right;
+	padding-right: 1em;
+}
+
+#fakeDocument p {
+	font-size: 50%;
+	line-height: 1.44em;
+	padding: 0 2em;
+}
+
+#fakeDocument strong {
+	padding: 0 1em;
+}
+
+#fakeDocument strong.h3 {
+	padding: 0 1.2em;
+	font-size: smaller;
 }
